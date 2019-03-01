@@ -18,10 +18,10 @@ class Solution {
     }
 
     private int partition(int[] arr, int l, int h) {
-        int i = l, j = h + 1;
+        int i = l + 1, j = h;
         while (true) {
-            while (arr[++i] < arr[l] && i < h) ;
-            while (arr[--j] > arr[l] && j > l) ;
+            while (arr[i] < arr[l] && i <= h) i++;
+            while (arr[j] > arr[l] && j >= l+1) j--;
             if (i >= j)
                 break;
             swap(arr, i, j);
