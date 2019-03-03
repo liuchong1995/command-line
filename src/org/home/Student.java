@@ -7,11 +7,30 @@ public class Student {
     String firstName;
     String lastName;
 
+    @Override
+    public String toString() {
+        return "Student{" +
+                "grade=" + grade +
+                '}';
+    }
+
+    public Student(int grade) {
+        this.grade = grade;
+    }
+
     Student(int grade, int cls, String firstName, String lastName){
         this.grade = grade;
         this.cls = cls;
         this.firstName = firstName;
         this.lastName = lastName;
+    }
+
+    public int getGrade() {
+        return grade;
+    }
+
+    public void setGrade(int grade) {
+        this.grade = grade;
     }
 
     @Override
