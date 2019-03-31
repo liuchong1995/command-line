@@ -6,10 +6,16 @@ import java.util.Random;
 
 public class Test {
     public static void main(String[] args) {
-        int[] array = generateArray(200, 0, 1000);
+/*        int[] array = generateArray(200, 0, 1000);
         int kthLargest = findKthLargest(array, 50);
         int kthLargest2 = findKthLargest2(array, 50);
-        System.out.println();
+        System.out.println();*/
+
+        Random random = new Random();
+        for (int i = 0; i < 100; i++) {
+            System.out.println(random.nextInt(2));
+        }
+
     }
 
     public static int findKthLargest(int[] nums, int k) {
