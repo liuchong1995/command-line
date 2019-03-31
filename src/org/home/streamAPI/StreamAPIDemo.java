@@ -141,6 +141,7 @@ public class StreamAPIDemo {
                 .anyMatch(c -> Objects.equals(c, "Milan"));
         System.out.println(milan);
     }
+
     //(6) 打印生活在剑桥的交易员的所有交易额。
     @Test
     public void ex6(){
